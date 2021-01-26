@@ -19,13 +19,17 @@ function displayLibrary (array) {
         let bookCard = document.createElement("div");
         bookCard.className = "bookCard";
         bookCard.id = myArray[i].title;
-        bookCard.innerText = `Title: ${myArray[i].title}, `
+        bookCard.innerText = `Title: ${myArray[i].title}`
         e.appendChild(bookCard);
+
+        // For loop to creal UL
+
     }
 }
 
-const theHobbit = new Book ("The Hobbit", "J.R.R. Tolkein", "295 Pages", true);
+const theHobbit = new Book ("The Hobbit", "J.R.R. Tolkein", "295", true);
 const harryPotterSorcerersStone = new Book ("Harry Potter and the Sorcerer's Stone", "J.K. Rowling", "309", true);
+const toKillAMockingbird = new Book ("To Kill a Mockingbird", "Harper Lee", "281", true);
 
 addBookToLibrary(theHobbit);
 addBookToLibrary(harryPotterSorcerersStone);
